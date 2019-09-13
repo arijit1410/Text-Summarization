@@ -8,6 +8,22 @@ For out experiment, we have scraped an online tech article discussing the pros a
 
 
 2) SkipThoughts ( Encoder-Decoder Network)
+	
+	- The module uses code of the [Skip-Thoughts paper](http://arxiv.org/abs/1506.06726) which can be found [here](https://github.com/ryankiros/skip-thoughts). Do:
+  ```
+  git clone https://github.com/ryankiros/skip-thoughts
+  ```
+
+- Clone this repository and copy the file `review_summarization.py` to the root of the cloned skip-thoughts repository. Do:
+  ```
+  git clone https://github.com/arijit1410/Text-summarization
+  cp Text-summarization/review_summarization.py skip-thoughts/
+  ```
+- Install dependencies. Do:
+  ```
+  pip install -r Text-summarization/requirements.txt
+  python -c 'import nltk; nltk.download("punkt")'
+  ```
 
 
 ## Summaries
