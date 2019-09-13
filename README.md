@@ -2,7 +2,13 @@
 
 ## A little comparitive case study for unsupervised text summarization.
 
-For out experiment, we have scraped an online tech article discussing the pros and cons of the OnePlus 7 smartphone and giving a final review on it. For this study, I have considered unsupervised techniques because for summarization because I believe we won't have ground truth annotations for the text summaries everytime. Supervised methods require a lot of data and human participation. Since most datasets for text summarization are for news articles and documents, we need a build robust model that can summarize text in an unsupervised manner, without having to worry about domain adaptation. 
+For out experiment, we have scraped an online tech article discussing the pros and cons of the OnePlus 7 smartphone and giving a final review on it. For this study, I have considered unsupervised techniques because for summarization because I believe we won't have ground truth annotations for the text summaries everytime. Supervised methods require a lot of data and human participation. Since most datasets for text summarization are for news articles and documents, we need a build robust model that can summarize text in an unsupervised manner, without having to worry about domain adaptation. We compare two approaches for our intial tests.
+
+1) TextRank ( Graph-Based )
+
+
+2) SkipThoughts ( Encoder-Decoder Network)
+
 
 ## Summaries
 
