@@ -9,7 +9,7 @@ For out experiment, we have scraped an online tech article discussing the pros a
 
 2) SkipThoughts ( Encoder-Decoder Network)
 	
-	- The module uses code of the [Skip-Thoughts paper](http://arxiv.org/abs/1506.06726) which can be found [here](https://github.com/ryankiros/skip-thoughts). Do:
+
   ```
   git clone https://github.com/ryankiros/skip-thoughts
   ```
