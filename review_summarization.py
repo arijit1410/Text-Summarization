@@ -28,14 +28,13 @@ from sklearn.metrics import pairwise_distances_argmin_min
 
 def preprocess(reviews):
     """
-    Performs preprocessing operations such as:
-        1. Removing signature lines (only English reviews are supported)
+    Perform preprocessing operations such as:
+        1. Keep only English reviews 
         2. Removing new line characters.
     """
     n_reviews = len(reviews)
     for i in range(n_reviews):
         review = reviews[i]
-        review, _ = extract_signature(review)
         lines = review.split('\n')
         for j in reversed(range(len(lines))):
             lines[j] = lines[j].strip()
