@@ -1,8 +1,8 @@
 # Text-Summarization
 
-## A little comparitive case study for text summarization.
+## A little comparitive case study for unsupervised text summarization.
 
-For out experiment, we have scraped an online tech article discussing the pros and cons of the OnePlus 7 smartphone and giving a final review on it.
+For out experiment, we have scraped an online tech article discussing the pros and cons of the OnePlus 7 smartphone and giving a final review on it. For this study, I have considered unsupervised techniques because for summarization because I believe we won't have ground truth annotations for the text summaries everytime. Supervised methods require a lot of data and human participation. Since most datasets for text summarization are for news articles and documents, we need a build robust model that can summarize text in an unsupervised manner, without having to worry about domain adaptation. 
 
 ## Summaries
 
@@ -22,6 +22,14 @@ As such, the phone flies. For comparison, the OnePlus 7 is 24g lighter, 1.1mm na
 
 
 From the highs of the OnePlus 7 Pro, the “non-Pro” OnePlus 7 may look like a consolation prize, but in many ways the OnePlus 7 is better because it holds true to the winning OnePlus formula: exceptional bang for your buck. It’s smaller and lighter, which makes it easier to use while still being a big-screen phone. It’s just as powerful, has the same great software and same smooth performance, and has a longer battery life than its Pro sibling. It even has the same unrivalled in-screen fingerprint sensor and great main camera. But if you were looking for a multi-camera, zoom in and out affair, this isn’t it. And while the screen looks great, it isn’t the same game-changing, addictively silky smooth display on the OnePlus 7 Pro. What you get for your £500 with the OnePlus 7 is a brilliant phone with an experience unrivalled anywhere near this price. It’s so good that there are only a few non-5G phones I would consider over this, and even then it’s a close call.
+
+## Conclusion 
+
+TextRank, although quite fast, doesn't take into consideration the semantic similarity between sentences. The Skip-Thoughts model, however is able find the semantic similarity between sentences and cluster them accordingly. Because of it's efficient clustering algorithm, it ensures that only one candidate sentence from each semantically similar cluster occurs in the summary.
+
+## Future Work and Scope for Improvement
+
+Instead of using extractive approaches, abstractive summarization can be implemented by training a decoder network which can convert the encoded representations of the cluster centers back into natural language sentences. However, generating plausible and gramatically correct sentences will be much harder to perfect.
 
 
 ## References
